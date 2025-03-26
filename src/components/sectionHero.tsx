@@ -1,3 +1,5 @@
+import Button from "./buttonComponent";
+
 function Banner() {
   return (
     <div className="banner-container">
@@ -8,14 +10,15 @@ function Banner() {
           and see your sites load instantly. Try it free.
         </p>
         <div className="button-group">
-          <button className="button chrome">Get it on Chrome</button>
-          <button className="button firefox">Get it on Firefox</button>
+          <Button className='chrome'>Get it on Chrome</Button>
+          <Button className='firefox'>Get it on Firefox</Button>
+
         </div>
       </div>
 
       <div className="banner-image">
         <div className="shadow-box"></div>
-        <img src="public/illustration-hero.svg" alt="Hero" className="hero" />
+        <img src="src\assets\illustration-hero.svg" alt="Hero" className="hero" />
       </div>
     </div>
   );
