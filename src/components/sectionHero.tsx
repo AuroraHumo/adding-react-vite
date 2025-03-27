@@ -1,9 +1,9 @@
 import Button from "./buttonComponent";
 
-function Banner() {
+function SectionHero() {
   return (
-    <div className="banner-container">
-      <div className="banner-text">
+    <div className="container">
+      <div className="text">
         <h1>A Simple Bookmark Manager</h1>
         <p>
           A clean and simple interface to organize your favourite websites. Open a new browser tab
@@ -23,4 +23,4 @@ function Banner() {
     </div>
   );
 }
-export default Banner;
+export default SectionHero;

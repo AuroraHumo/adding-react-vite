@@ -1,10 +1,10 @@
 import Button from "./buttonComponent";
 
-function Cabecera() {
+function Navbar() {
   return (
     <>
     <nav className="navbar">
-    <div className="container">
+    <div className="navbar-container">
       <a className="navbar-brand" href="#">
      <img src="src\assets\logo-bookmark.svg" alt="Logo" />
       </a>    
@@ -20,4 +20,4 @@ function Cabecera() {
   </>
   );
 }
-export default Cabecera;
+export default Navbar;
