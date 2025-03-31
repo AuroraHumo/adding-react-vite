@@ -13,10 +13,16 @@ body {
     flex-wrap: wrap;
 }
 
-.text {
+.text-left {
     flex: 1;
     max-width: 600px;
     text-align: left;
+}
+
+.text-center {
+    flex: 1;
+    max-width: 600px;
+    text-align: center;
 }
 
 .banner-text h1 {

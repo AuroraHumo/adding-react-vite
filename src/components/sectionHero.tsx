@@ -3,7 +3,7 @@ import Button from "./buttonComponent";
 function SectionHero() {
   return (
     <div className="container">
-      <div className="text">
+      <div className="text-left">
         <h1>A Simple Bookmark Manager</h1>
         <p>
           A clean and simple interface to organize your favourite websites. Open a new browser tab
