@@ -6,7 +6,7 @@ import './styles/globals.css'
 import './styles/navbar.css'
 import './styles/buttons.css'
 import './styles/features.css'
-
+import './styles/react-tabs.css'
 function App() {
 
   return (

@@ -1,38 +1,38 @@
 import { useState } from "react";
+import TabAtoms from "./tabAtoms";
 
 export default function Tabs() {
   const [activeTab, setActiveTab] = useState("tab1");
 
   return (
+    <>
     <div>
-      {/* Menú de pestanyes */}
       <ul className="tab-menu">
         <button 
-          className={`tab-item ${activeTab === "tab1" ? "active" : ""}`} 
+          className={`button chrome ${activeTab === "tab1" ? "t-active" : ""}`} 
           onClick={() => setActiveTab("tab1")}
         >
           Simple Bookmarking
         </button>
         <button 
-          className={`tab-item ${activeTab === "tab2" ? "active" : ""}`} 
+          className={`button chrome ${activeTab === "tab2" ? "t-active" : ""}`} 
           onClick={() => setActiveTab("tab2")}
         >
           Speedy Searching
         </button>
         <button 
-          className={`tab-item ${activeTab === "tab3" ? "active" : ""}`} 
+          className={`button chrome ${activeTab === "tab3" ? "t-active" : ""}`} 
           onClick={() => setActiveTab("tab3")}
         >
           Easy Sharing
         </button>
       </ul>
-
-      {/* Contingut de les pestanyes */}
-      <div className="tab-content">
+    </div>
+    <div className="container">     
+      <div className="">
         {activeTab === "tab1" && (
           <div className="tab-pane">
-            <h2>Bookmark in one click</h2>
-            <p>Organitza els teus marcadors com vulguis...</p>
+            <TabAtoms/>
           </div>
         )}
         {activeTab === "tab2" && (
@@ -49,5 +49,6 @@ export default function Tabs() {
         )}
       </div>
     </div>
+    </>
   );
 }

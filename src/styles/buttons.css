@@ -19,7 +19,7 @@
     border: 2px solid #007bff;
 }
 
-.chrome:hover {
+.chrome:hover, .t-active {
     background-color: #ffffff;
     color: #0056b3;
 
@@ -33,3 +33,9 @@
 .firefox:hover {
     background-color: #ddd;
 }
+
+/* .t-active {
+    background-color: #007bff;
+    color: rgb(34, 185, 21);
+    border: 2px solid #007bff;
+} */

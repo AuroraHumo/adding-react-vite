@@ -5,9 +5,9 @@ const TabComponent = () => {
   return (
     <Tabs>
       <TabList>
-        <Tab>Tab 1</Tab>
-        <Tab>Tab 2</Tab>
-        <Tab>Tab 3</Tab>
+        <Tab>Simple Bookmarking</Tab>
+        <Tab>Speedy Searching</Tab>
+        <Tab>Easy Sharing</Tab>
       </TabList>
       <TabPanel>
         <div>Content for Tab 1</div>

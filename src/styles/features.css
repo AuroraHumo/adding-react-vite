@@ -5,3 +5,17 @@
     align-items: center;
     margin-top: 2rem;
 }
+.tab-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.tab-item {
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    border-radius: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
