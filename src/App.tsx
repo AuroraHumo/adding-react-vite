@@ -1,6 +1,7 @@
 import Navbar from "./components/navbarComponent"
 import SectionHero from "./components/sectionHero"
 import SectionFeatures from "./components/sectionFeatures"
+import SectionDownloads from "./components/sectionDownloads"
 
 import './styles/globals.css'
 import './styles/navbar.css'
@@ -16,6 +17,7 @@ function App() {
      <Navbar/>
      <SectionHero/>
      <SectionFeatures/>
+     <SectionDownloads/>
     </div>
   )
 }
