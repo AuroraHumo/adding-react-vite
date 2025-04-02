@@ -10,7 +10,7 @@ function SectionHero() {
           and see your sites load instantly. Try it free.
         </p>
         <div className="button-group">
-          <Button className='chrome'>Get it on Chrome</Button>
+          <Button className='button-blue'>Get it on Chrome</Button>
           <Button className='firefox'>Get it on Firefox</Button>
 
         </div>

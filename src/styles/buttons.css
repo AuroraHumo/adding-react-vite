@@ -13,13 +13,13 @@
     transition: 0.3s;
 }
 
-.chrome {
+.button-blue {
     background-color: #007bff;
     color: white;
     border: 2px solid #007bff;
 }
 
-.chrome:hover, .t-active {
+.button-blue:hover, .t-active {
     background-color: #ffffff;
     color: #0056b3;
 
