@@ -1,55 +1,40 @@
 import { useState } from "react";
-import TabAtom1 from "./tabAtom1";
-import TabAtom2 from "./tabAtom2";
-import TabAtom3 from "./tabAtom3";
+import { NewTabs } from "../data/tabs";
+import Button from "./buttonComponent";
 
 export default function TabsComponent() {
-  const [activeTab, setActiveTab] = useState("tab1");
+  const [activeTab, setActiveTab] = useState(0);
 
   return (
     <>
-    
       <ul className="tab-menu">
         <button 
-          className={`button button-blue ${activeTab === "tab1" ? "t-active" : ""}`} 
-          onClick={() => setActiveTab("tab1")}
+          className={`button button-blue ${activeTab === 0? "t-active" : ""}`} 
+          onClick={() => setActiveTab(0)}
         >
           Simple Bookmarking
         </button>
         <button 
-          className={`button button-blue ${activeTab === "tab2" ? "t-active" : ""}`} 
-          onClick={() => setActiveTab("tab2")}
+          className={`button button-blue ${activeTab === 1 ? "t-active" : ""}`} 
+          onClick={() => setActiveTab(1)}
         >
           Speedy Searching
         </button>
         <button 
-          className={`button button-blue ${activeTab === "tab3" ? "t-active" : ""}`} 
-          onClick={() => setActiveTab("tab3")}
+          className={`button button-blue ${activeTab === 2 ? "t-active" : ""}`} 
+          onClick={() => setActiveTab(2)}
         >
           Easy Sharing
         </button>
       </ul>
-    
-    
-      
-        {activeTab === "tab1" && (
-          <div className="tab-pane">
-            <TabAtom1/>
-          </div>
-        )}
-        {activeTab === "tab2" && (
-          <div className="tab-pane">
-            <TabAtom2/>
-
-          </div>
-        )}
-        {activeTab === "tab3" && (
-          <div className="tab-pane">
-            <TabAtom3/>
-
-          </div>
-        )}
-      
+      <div className="half text-center">
+        <img src={NewTabs[activeTab].url} className="img-tab" alt="..."/>
+      </div>
+      <div className="half text-left">
+        <h2>{NewTabs[activeTab].title}</h2>
+        <p>{NewTabs[activeTab].description}</p>
+        <Button className="button button-blue">More info</Button>
+      </div>
     </>
   );
 }
