@@ -1,54 +1,57 @@
-# React + TypeScript + Vite
+# **WEB REFACTORIZATION USING REACT**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## **Description**
 
-Currently, two official plugins are available:
+* Refactorization of a web, previously built with simple HTML,Bootstrap, and Javascript using React, Typescript and Vanilla CSS. 🤯
+* Build the logics to create diff folders and single components
+* Exports and imports.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## **Technologies**
 
-## Expanding the ESLint configuration
+* **React + Vite**
+* **TypeScript**
+* **HTML5**
+* **CSS Vanilla**
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## **Requirements**
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+> **Important!** Before running the project, make sure you have:
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+* A web browser.
+* **Node.js** installed
+* **npm (Node Package Manager)** installed.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## **Installation**
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+1. Clone the repository:
+
+   `git clone https://github.com/AuroraHumo/adding-react-vite`
+
+   `cd <adding-react-vite>`
+2. Unlink the repository from the original GitHub repo:
+
+   ``git remote rm origin``
+3. Link your repo to your new GitHub repository:
+
+   `git remote add origin <adding-react-vite>`
+4. Install dependencies:
+
+   `npm install react-dom`:             provides DOM-specific methods for React.
+   `npm install react-router-dom`: provides routing functionality for React.
+5. Compile TypeScript:
+
+   `npx tsc`
+6. Run the project (optional, if using a local server):
+
+   `npm live-server`
+
+## **Contributing**
+
+Feel free to contribute! 
+
+* Fork the repository and clone it locally
+* Create a new branch for your feature: `git checkout -b feature/my-feature`
+* Stage your changes: `git add .` // `git add *`
+* Commit your changes: `git commit -m "Describe your changes"`
+* Push the branch: `git push origin feature/my-feature`
+* Open a Pull Request and wait for review 🚀🤓🚀

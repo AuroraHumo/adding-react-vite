@@ -1,0 +1,43 @@
+.button-group {
+    
+    display: flex;
+    gap: 10%;
+}
+
+.button {
+    padding: 10px 16px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.button-blue {
+    background-color: #007bff;
+    color: white;
+    border: 2px solid #007bff;
+}
+
+.button-blue:hover, .t-active {
+    background-color: #ffffff;
+    color: #0056b3;
+
+}
+
+.firefox {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.firefox:hover {
+    background-color: #ddd;
+}
+
+/* .t-active {
+    background-color: #007bff;
+    color: rgb(34, 185, 21);
+    border: 2px solid #007bff;
+} */
