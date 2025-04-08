@@ -1,3 +1,5 @@
+import Button from "./buttonComponent";
+
 function TabAtom1() {
     return (
     <>
@@ -7,8 +9,8 @@ function TabAtom1() {
       <div className="half text-left">
         <h2>Bookmark in one click</h2>
         <p>Organize your bookmarks however you like. Our drag and drop interface gives you control over how you manage your favourite sites.</p>
-        <button className="button button-blue">More info</button>
-      </div>
+        <Button className="button button-blue">More info</Button>
+              </div>
   </>
 
   );

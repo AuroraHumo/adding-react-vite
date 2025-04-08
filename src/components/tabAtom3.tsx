@@ -1,3 +1,5 @@
+import Button from "./buttonComponent";
+
 function TabAtom3() {
   return (
     <>
@@ -6,8 +8,8 @@ function TabAtom3() {
       </div>
       <div className="half text-left">
       <h2>Easy Sharing</h2>
-      <p>Comparteix els teus marcadors fàcilment...</p>
-      <button className="button button-blue">More info</button>
+      <p>Easily share your bookmarks and collections with others.</p>
+      <Button className="button button-blue">More info</Button>
       </div>
   </>
   );
