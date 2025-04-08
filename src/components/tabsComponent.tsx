@@ -8,27 +8,17 @@ export default function TabsComponent() {
   return (
     <>
       <ul className="tab-menu">
-        <button 
-          className={`button button-blue ${activeTab === 0? "t-active" : ""}`} 
-          onClick={() => setActiveTab(0)}
-        >
-          Simple Bookmarking
-        </button>
-        <button 
-          className={`button button-blue ${activeTab === 1 ? "t-active" : ""}`} 
-          onClick={() => setActiveTab(1)}
-        >
-          Speedy Searching
-        </button>
-        <button 
-          className={`button button-blue ${activeTab === 2 ? "t-active" : ""}`} 
-          onClick={() => setActiveTab(2)}
-        >
-          Easy Sharing
-        </button>
+        { NewTabs.map((tab, index) => (
+              <button key={index}
+              className={`button button-blue ${activeTab === index ? "t-active" : ""}`} 
+              onClick={() => setActiveTab(index)}> 
+              {tab.title}
+            </button>
+          ))}
+          
       </ul>
       <div className="half text-center">
-        <img src={NewTabs[activeTab].url} className="img-tab" alt="..."/>
+        <img src={NewTabs[activeTab].url} className="img-tab"/>
       </div>
       <div className="half text-left">
         <h2>{NewTabs[activeTab].title}</h2>
